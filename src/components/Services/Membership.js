@@ -1,5 +1,5 @@
 
-import React, {useState, useEffect, useContext} from 'react'
+import React, {useEffect, useContext} from 'react'
 
 import MembershipContext from '../../context/Services/Membership/MembershipContext'
 
@@ -10,21 +10,9 @@ export default function Membership() {
     const { 
         membership, 
         getMembership,
-        createMembership,
-        updateMembership,
-        deleteMembership} = context
+        } = context
 
   
-
-    const [ newMembership, setNewMembership ] = useState({
-        name: "",
-        image:"",
-        priceList:"",
-        price:""
-
-    })
-
-    const [ editionMode, setEditionMode ] = useState(false)
 
 
     useEffect(() => {
@@ -33,68 +21,6 @@ export default function Membership() {
 
     },[])
 
-
-
-    const handdleChange = (event) => {
-        
-        event.preventDefault()
-
-        setNewMembership({
-            ...newMembership,
-            [event.target.name]: event.target.value
-        })
-
-
-    }
-
-
-    const sendForm = (event) => {
-        event.preventDefault()
-
-        createMembership(newMembership)
-
-        setNewMembership({
-            name: "",
-            image:"",
-            priceList:"",
-            price:""
-        })
-    }
-
-
-    const activateEditionMode = (event, element) => {
-        
-        event.preventDefault()
-        setEditionMode(true)
-        setNewMembership(element)
-
-    }
-
-
-    const editMembership = (event) => {
-        
-        event.preventDefault()
-        
-        updateMembership(newMembership)
-
-        setEditionMode(false)
-
-        setNewMembership({
-            name: "",
-            image:"",
-            priceList:"",
-            price:""
-        })
-
-    }
-
-
-    const removeMembership = (event, element) => {
-        
-        event.preventDefault()
-        deleteMembership(element)
-
-    }
 
 
 
@@ -109,39 +35,7 @@ export default function Membership() {
         
             <hr />
 
-            <form onSubmit={ editionMode ? 
-                    (e) => editMembership(e) : 
-                    (e) => sendForm(e)
-                }>
-                <input 
-                    name="nombre"
-                    type="text"
-                    value={newMembership.name}
-                    onChange={(e) => { handdleChange(e) }}
-
-                    image="image"
-                    type="img"
-                    value={newMembership.image}
-                    onChange={(e) => { handdleChange(e) }}
-
-                    priceList="Precio de lista"
-                    type="price"
-                    value={newMembership.priceList}
-                    onChange={(e) => { handdleChange(e) }}
-
-                    price="Precio"
-                    type="price"
-                    value={newMembership.price}
-                    onChange={(e) => { handdleChange(e) }}
-                />
-
-                <button>
-                    { editionMode ? "Editar Membership" : "Crear Membership" }
-                </button>
-
-
-            </form>
-
+           
 
             {
                 membership.length === 0 ?
@@ -157,9 +51,6 @@ export default function Membership() {
                             <p>{membership.priceList}</p>
                             <p>{membership.price}</p>
 
-
-                           <button onClick={(evento) => {activateEditionMode(evento, membership)}}>Editar</button>
-                            <button onClick={(evento) => removeMembership(evento, membership)}>Borrar</button>
 
                         </div>
                     )

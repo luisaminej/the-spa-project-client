@@ -1,5 +1,5 @@
 
-import React, {useState, useEffect, useContext} from 'react'
+import React, {useEffect, useContext} from 'react'
 
 import PacksContext from '../../context/Services/Packs/PacksContext'
 
@@ -10,21 +10,9 @@ const context = useContext(PacksContext)
     const { 
         packs, 
         getPacks,
-        createPacks,
-        updatePacks,
-        deletePacks} = context
+        } = context
 
   
-
-    const [ newPacks, setNewPacks ] = useState({
-        name: "",
-        image:"",
-        priceList:"",
-        price:""
-
-    })
-
-    const [ editionMode, setEditionMode ] = useState(false)
 
 
     useEffect(() => {
@@ -33,69 +21,7 @@ const context = useContext(PacksContext)
 
     },[])
 
-
-
-    const handdleChange = (event) => {
-        
-        event.preventDefault()
-
-        setNewPacks({
-            ...newPacks,
-            [event.target.name]: event.target.value
-        })
-
-
-    }
-
-
-    const sendForm = (event) => {
-        event.preventDefault()
-
-        createPacks(newPacks)
-
-        setNewPacks({
-            name: "",
-            image:"",
-            priceList:"",
-            price:""
-        })
-    }
-
-
-    const activateEditionMode = (event, element) => {
-        
-        event.preventDefault()
-        setEditionMode(true)
-        setNewPacks(element)
-
-    }
-
-
-    const editPacks = (event) => {
-        
-        event.preventDefault()
-        
-        updatePacks(newPacks)
-
-        setEditionMode(false)
-
-        setNewPacks({
-            name: "",
-            image:"",
-            priceList:"",
-            price:""
-        })
-
-    }
-
-
-    const removePacks = (event, element) => {
-        
-        event.preventDefault()
-        deletePacks(element)
-
-    }
-
+   
 
 
     return (
@@ -109,38 +35,7 @@ const context = useContext(PacksContext)
         
             <hr />
 
-            <form onSubmit={ editionMode ? 
-                    (e) => editPacks(e) : 
-                    (e) => sendForm(e)
-                }>
-                <input 
-                    name="nombre"
-                    type="text"
-                    value={newPacks.name}
-                    onChange={(e) => { handdleChange(e) }}
-
-                    image="image"
-                    type="img"
-                    value={newPacks.image}
-                    onChange={(e) => { handdleChange(e) }}
-
-                    priceList="Precio de lista"
-                    type="price"
-                    value={newPacks.priceList}
-                    onChange={(e) => { handdleChange(e) }}
-
-                    price="Precio"
-                    type="price"
-                    value={newPacks.price}
-                    onChange={(e) => { handdleChange(e) }}
-                />
-
-                <button>
-                    { editionMode ? "Editar Packs" : "Crear Packs" }
-                </button>
-
-
-            </form>
+          
 
 
             {
@@ -157,9 +52,6 @@ const context = useContext(PacksContext)
                             <p>{packs.priceList}</p>
                             <p>{packs.price}</p>
 
-
-                           <button onClick={(evento) => {activateEditionMode(evento, packs)}}>Editar</button>
-                            <button onClick={(evento) => removePacks(evento, packs)}>Borrar</button>
 
                         </div>
                     )
