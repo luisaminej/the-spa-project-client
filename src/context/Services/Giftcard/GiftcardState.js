@@ -22,7 +22,7 @@ const GiftcardState = (props) => {
     const createGiftcard = async (dataForm) => {
         try {
             
-             await axios.post("http://localhost:3000/api/giftcard/create", dataForm)
+             await axios.post("http://localhost:3001/api/services/giftcard/create", dataForm)
 
             getGiftcard()
 
@@ -38,7 +38,7 @@ const GiftcardState = (props) => {
 
         try {
 
-            const respuesta = await axios.get("http://localhost:3000/api/giftcard")
+            const respuesta = await axios.get("http://localhost:3001/api/services/giftcard")
 
             const updatedGiftcard = respuesta.data
             console.log(updatedGiftcard)
@@ -61,7 +61,7 @@ const GiftcardState = (props) => {
             name: dataForm.name
         }
 
-         await axios.post("http://localhost:3005/api/giftcard/update", form)
+         await axios.post("http://localhost:3001/api/services/giftcard/update", form)
 
          getGiftcard()
         
@@ -74,7 +74,7 @@ const GiftcardState = (props) => {
             giftcardId: dataForm._id
         }
 
-        const res = await axios.post("http://localhost:3005/api/giftcard/delete", form)
+        const res = await axios.post("http://localhost:3001/api/services/giftcard/delete", form)
 
         console.log(res)
         

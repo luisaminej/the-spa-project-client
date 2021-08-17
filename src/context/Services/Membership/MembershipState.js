@@ -22,7 +22,7 @@ const MembershipState = (props) => {
     const createMembership = async (dataForm) => {
         try {
             
-             await axios.post("http://localhost:3000/api/membership/create", dataForm)
+             await axios.post("http://localhost:3001/api/services/membership/create", dataForm)
 
             getMembership()
 
@@ -38,7 +38,7 @@ const MembershipState = (props) => {
 
         try {
 
-            const respuesta = await axios.get("http://localhost:3000/api/membership")
+            const respuesta = await axios.get("http://localhost:3001/api/services/membership")
 
             const updatedMembership = respuesta.data
             console.log(updatedMembership)
@@ -61,7 +61,7 @@ const MembershipState = (props) => {
             name: dataForm.name
         }
 
-         await axios.post("http://localhost:3005/api/membership/update", form)
+         await axios.post("http://localhost:3001/api/services/membership/update", form)
 
          getMembership()
         
@@ -74,7 +74,7 @@ const MembershipState = (props) => {
             membershipId: dataForm._id
         }
 
-        const res = await axios.post("http://localhost:3005/api/membership/delete", form)
+        const res = await axios.post("http://localhost:3001/api/services/membership/delete", form)
 
         console.log(res)
         

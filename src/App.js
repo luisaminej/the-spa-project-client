@@ -45,6 +45,7 @@ import GiftcardState from './context/Services/Giftcard/GiftcardState'
 import MassageState from './context/Services/Massage/MassageState'
 import MembershipState from './context/Services/Membership/MembershipState'
 import PacksState from './context/Services/Packs/PacksState'
+import Footer from './components/Layout/Footer';
 
 
 
@@ -80,19 +81,19 @@ function App() {
                             <AuthRoute exact path="/register" component={Register} />
 
                             {/* RUTAS PÚBLICAS */}
-                            <Route path="/" component={Home} />
+                            <Route exact path="/" component={Home} />
                             <Route exact path="/contacto" component={Contact} />
                             <Route exact path="/ayuda" component={Help} />
                             <Route exact path="/nosotros" component={Us} />
 
-                            <Route exact path="/productos-cuerpo" component={Body} />
-                            <Route exact path="/productos-rostro" component={Face} />
-                            <Route exact path="/corporales" component={Bodily} />
-                            <Route exact path="/faciales" component={Facials} />
-                            <Route exact path="/tarjeta-de-regalo" component={Giftcard} />
-                            <Route exact path="/masajes" component={Massage} />
-                            <Route exact path="/membresias" component={Membership} />
-                            <Route exact path="/paquetes" component={Packs} />
+                            <Route exact path="/productos/cuerpo" component={Body} />
+                            <Route exact path="/productos/rostro" component={Face} />
+                            <Route exact path="/servicios/corporales" component={Bodily} />
+                            <Route exact path="/servicios/faciales" component={Facials} />
+                            <Route exact path="/servicios/tarjeta-de-regalo" component={Giftcard} />
+                            <Route exact path="/servicios/masajes" component={Massage} />
+                            <Route exact path="/servicios/membresias" component={Membership} />
+                            <Route exact path="/servicios/paquetes" component={Packs} />
                           </Switch>
 
                         </Router>
@@ -106,7 +107,7 @@ function App() {
           </FaceState>
         </BodyState>
       </UserState>
-
+<Footer />
     </>
   );
 }

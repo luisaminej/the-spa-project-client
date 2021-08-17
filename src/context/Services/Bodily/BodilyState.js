@@ -22,7 +22,7 @@ const BodilyState = (props) => {
     const createBodily = async (dataForm) => {
         try {
             
-             await axios.post("http://localhost:3000/api/bodily/create", dataForm)
+             await axios.post("http://localhost:3001/api/services/bodily/create", dataForm)
 
             getBodily()
 
@@ -38,7 +38,7 @@ const BodilyState = (props) => {
 
         try {
 
-            const respuesta = await axios.get("http://localhost:3000/api/bodily")
+            const respuesta = await axios.get("http://localhost:3001/api/services/bodily")
 
             const updatedBodily = respuesta.data
             console.log(updatedBodily)
@@ -61,7 +61,7 @@ const BodilyState = (props) => {
             name: dataForm.name
         }
 
-         await axios.post("http://localhost:3005/api/bodily/update", form)
+         await axios.post("http://localhost:3001/api/services/bodily/update", form)
 
          getBodily()
         
@@ -74,7 +74,7 @@ const BodilyState = (props) => {
             bodilyId: dataForm._id
         }
 
-        const res = await axios.post("http://localhost:3005/api/bodily/delete", form)
+        const res = await axios.post("http://localhost:3001/api/services/bodily/delete", form)
 
         console.log(res)
         

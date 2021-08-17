@@ -1,8 +1,8 @@
-import React, { useState, useContext } from 'react'
-
+import React, { useContext, useState } from 'react'
+import { Link } from 'react-router-dom'
 import UserContext from './../../context/UserContext'
 
-import { Link } from 'react-router-dom'
+
 
 
 export default function Header() {
@@ -29,8 +29,82 @@ export default function Header() {
 
     return (
         <>
-            <nav className="bg-gray-800">
-                <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <nav className="bg-pink-logo">
+                <div className="max-w-8xl mx-auto px-2 sm:px-6 lg:px-8">
+                    <div className="relative flex justify-between h-8">
+                        <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+
+
+                            {/* MOBILE */}
+                            <button type="button" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                                <span className="sr-only">Open main menu</span>
+
+                                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+
+                                <svg className="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-end">
+                        
+                            <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+
+                                {
+
+                                    authStatus ?
+
+                                        (
+                                            <>
+                                                <a href="#" className="block px-4 py-2 text-sm text-pink-dark" role="menuitem" tabindex="-1" id="user-menu-item-0">email@thejunglespa.com</a>
+                                                <a href="#" className="block px-4 py-2 text-sm text-pink-dark" role="menuitem" tabindex="-1" id="user-menu-item-0">+52 5513192695</a>
+                                                <a href="#" className="block px-4 py-2 text-sm text-pink-dark" role="menuitem" tabindex="-1" id="user-menu-item-0">México</a>
+                                                <a className="block px-4 py-2 text-sm text-pink-dark" onClick={() => { logOut() }}>
+                                                    Cerrar sesión
+                                                </a>
+                                            </>
+                                        ) :
+                                        (
+                                            <>
+                                                <Link to="/register" className="block px-4 py-2 text-sm text-pink-dark">
+                                                    Registro
+                                                </Link>
+                                                <Link to="/login" className="block px-4 py-2 text-sm text-pink-dark">
+                                                    Iniciar sesión
+                                                </Link>
+                                            </>
+                                        )
+
+
+                                }
+
+
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div className="sm:hidden" id="mobile-menu">
+                    <div className="pt-2 pb-4 space-y-1">
+                        <a href="#" className="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Dashboard</a>
+                        <a href="#" className="border-transparent text-white-100 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Team</a>
+                        <a href="#" className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Projects</a>
+                        <a href="#" className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Calendar</a>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <nav className="bg-pink-dark">
+                <div className="max-w-7xl mx-auto px-2 ">
                     <div className="relative flex justify-between h-16">
                         <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
 
@@ -48,46 +122,38 @@ export default function Header() {
                                 </svg>
                             </button>
                         </div>
-                        <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                        <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-center">
                             <div className="flex-shrink-0 flex items-center">
-                                <Link to="/">
-                                    <img className="block lg:hidden h-8 w-auto" src="https://cdn-images-1.medium.com/max/1200/1*69RcxrWXuk385lSxkIYYLA.png" alt="Workflow" />
-                                    <img className="hidden lg:block h-8 w-auto" src="https://cdn-images-1.medium.com/max/1200/1*69RcxrWXuk385lSxkIYYLA.png" alt="Workflow" />
+                                <Link to="/dashboard">
+                                    <img className="block lg:hidden h-12 w-auto sm:justify-start" src="logospanofondo.png" alt="Workflow" />
+                                    <img className="hidden lg:block h-12 w-auto sm:justify-start" src="logospanofondo.png" alt="Workflow" />
                                 </Link>
                             </div>
                             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
 
-                                {
-
-                                    authStatus ?
-
-                                        (
+                                
                                             <>
-                                                <Link to="/dashboard" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                                                    Dashboard
+                                                <Link to="/servicios" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                                    Servicios
                                                 </Link>
-                                                <Link to="/dashboard/billing" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                                                    Billing
+                                                <Link to="/productos" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                                    Productos
                                                 </Link>
-                                                <button className="text-white text-sm" onClick={() => { logOut() }}>
-                                                    Cerrar sesión
-                                                </button>
+                                                <Link to="/reservas" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                                    Reservas
+                                                </Link>
+                                                <Link to="/nosotros" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                                    Nosotros
+                                                </Link>
+                                                <Link to="/ayuda" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                                    Ayuda
+                                                </Link>
+                                                <Link to="/contacto" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                                    Contacto
+                                                </Link>
+                                                
                                             </>
-                                        ) :
-                                        (
-                                            <>
-                                                <Link to="/register" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                                                    Registro
-                                                </Link>
-                                                <Link to="/login" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                                                    Iniciar sesión
-                                                </Link>
-                                            </>
-                                        )
-
-
-                                }
-
+                                   
 
 
 
@@ -103,15 +169,7 @@ export default function Header() {
                                         <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 
                                             <div className="ml-3 relative">
-                                                <div>
-                                                    <button
-                                                        onClick={(e) => { showNav(e) }}
-                                                        type="button" className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-
-                                                        <img className="h-8 w-8 rounded-full" src="https://pbs.twimg.com/profile_images/1377113473092444170/KM6L25Ch_400x400.jpg" alt="" />
-
-                                                    </button>
-                                                </div>
+                                               
 
 
                                                 {
@@ -152,6 +210,7 @@ export default function Header() {
                     </div>
                 </div>
             </nav>
+
 
 
 

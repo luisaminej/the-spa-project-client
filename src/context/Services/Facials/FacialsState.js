@@ -22,7 +22,7 @@ const FacialsState = (props) => {
     const createFacials = async (dataForm) => {
         try {
             
-             await axios.post("http://localhost:3000/api/facials/create", dataForm)
+             await axios.post("http://localhost:3001/api/services/facials/create", dataForm)
 
             getFacials()
 
@@ -38,7 +38,7 @@ const FacialsState = (props) => {
 
         try {
 
-            const respuesta = await axios.get("http://localhost:3000/api/facials")
+            const respuesta = await axios.get("http://localhost:3001/api/services/facials")
 
             const updatedFacials = respuesta.data
             console.log(updatedFacials)
@@ -61,7 +61,7 @@ const FacialsState = (props) => {
             name: dataForm.name
         }
 
-         await axios.post("http://localhost:3005/api/facials/update", form)
+         await axios.post("http://localhost:3001/api/services/facials/update", form)
 
          getFacials()
         
@@ -74,7 +74,7 @@ const FacialsState = (props) => {
             facialsId: dataForm._id
         }
 
-        const res = await axios.post("http://localhost:3005/api/facials/delete", form)
+        const res = await axios.post("http://localhost:3001/api/services/facials/delete", form)
 
         console.log(res)
         
