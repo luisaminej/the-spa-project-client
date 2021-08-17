@@ -38,7 +38,7 @@ const MembershipState = (props) => {
 
         try {
 
-            const respuesta = await axios.get("http://localhost:3001/api/services/membership")
+            const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/services/membership`)
 
             const updatedMembership = respuesta.data
             console.log(updatedMembership)

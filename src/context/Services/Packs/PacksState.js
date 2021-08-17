@@ -38,7 +38,7 @@ const PacksState = (props) => {
 
         try {
 
-            const respuesta = await axios.get("http://localhost:3001/api/services/packs")
+            const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/services/packs`)
 
             const updatedPacks = respuesta.data
             console.log(updatedPacks)

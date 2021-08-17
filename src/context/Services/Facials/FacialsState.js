@@ -38,7 +38,7 @@ const FacialsState = (props) => {
 
         try {
 
-            const respuesta = await axios.get("http://localhost:3001/api/services/facials")
+            const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/services/facials`)
 
             const updatedFacials = respuesta.data
             console.log(updatedFacials)

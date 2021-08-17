@@ -38,7 +38,7 @@ const MassageState = (props) => {
 
         try {
 
-            const respuesta = await axios.get("http://localhost:3001/api/services/massage")
+            const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/services/massage`)
 
             const updatedMassage = respuesta.data
             console.log(updatedMassage)

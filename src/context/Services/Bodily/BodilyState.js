@@ -38,7 +38,7 @@ const BodilyState = (props) => {
 
         try {
 
-            const respuesta = await axios.get("http://localhost:3001/api/services/bodily")
+            const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/services/bodily`)
 
             const updatedBodily = respuesta.data
             console.log(updatedBodily)
