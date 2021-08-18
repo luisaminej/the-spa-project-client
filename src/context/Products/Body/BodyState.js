@@ -38,7 +38,7 @@ const BodyState = (props) => {
 
         try {
 
-            const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/products/body`)
+            const respuesta = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/products/body`)
 
             const updatedBody = respuesta.data
             console.log(updatedBody)
