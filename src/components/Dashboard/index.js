@@ -38,8 +38,6 @@ export default function Dashboard() {
                     <div class="lg:hidden">
 
                         <div class="z-20 fixed inset-0 bg-black bg-opacity-25" aria-hidden="true"></div>
-
-
                         <div class="z-30 absolute top-0 inset-x-0 max-w-3xl mx-auto w-full p-2 transition transform origin-top">
                             <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y divide-gray-200">
                                 <div class="pt-3 pb-2">
