@@ -24,12 +24,17 @@ module.exports = {
         terra: "#474642",
         dark: "#2c382b",
         transparent:"#6e776d",
-        light:"#9ba39b6e"
+        light:"#9ba39b6e",
+        t:"#6e776d",
+        l:"#677066"
       },
       pink:{
+        light:"#db9595",
         logo: "#f1dcdca7",
         dark:"#d18181",
-        transparent: "#edb2adb5"
+        transparent: "#edb2adb5",
+        deli:"#dbbdbd63",
+        flamingo:"#db7894"
       },
       azul: {
         light: "#5e84ff"

@@ -35,9 +35,11 @@ export default function Services() {
 
             <div>
 
-                <div class="bg-white overflow-hidden">
+            <div class="bg-white overflow-hidden">
                     <div class="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-                        <div class="hidden lg:block bg-green-transparent absolute top-0 bottom-0 left-3/4 w-screen"></div>
+                        <div class="hidden lg:block bg-green-transparent absolute top-0 bottom-0 left-3/4 w-screen">
+                        <img class=" shadow-lg object-contain  " src="logo.jpeg" width="550" height="700" />
+                        </div>
                         <div class="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
                             <div>
                                 <h2 class="text-base text-green-dark font-semibold tracking-wide uppercase">Nuestros servicios</h2>

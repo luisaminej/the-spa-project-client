@@ -38,8 +38,7 @@ export default function Footer() {
         </a>
       </div>
 
-   
-      
+     
      
     </nav>
     <div class="mt-8 flex justify-center space-x-6">

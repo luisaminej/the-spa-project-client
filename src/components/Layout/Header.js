@@ -49,7 +49,7 @@ export default function Header() {
                             </button>
                         </div>
                         <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-end">
-                        
+
                             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
 
                                 {
@@ -58,9 +58,12 @@ export default function Header() {
 
                                         (
                                             <>
-                                                <a href="#" className="block px-4 py-2 text-sm text-pink-dark" role="menuitem" tabindex="-1" id="user-menu-item-0">email@thejunglespa.com</a>
-                                                <a href="#" className="block px-4 py-2 text-sm text-pink-dark" role="menuitem" tabindex="-1" id="user-menu-item-0">+52 5513192695</a>
-                                                <a href="#" className="block px-4 py-2 text-sm text-pink-dark" role="menuitem" tabindex="-1" id="user-menu-item-0">México</a>
+
+                                                <p className=" px-4 py-2 text-sm text-pink-dark">correo@thejunglespa.com</p>
+                                                <p className=" px-4 py-2 text-sm text-pink-dark">+52 5513192695</p>
+                                                <img className="px-4 py-2" src="flag.png" alt="logo Spa" />
+                                                <p className=" px-4 py-2 text-sm text-pink-dark">México</p>
+                                                <a href="/dashboard" className="block px-4 py-2 text-sm text-pink-dark" role="menuitem" tabindex="-1" id="user-menu-item-0">Mi perfil</a>
                                                 <a className="block px-4 py-2 text-sm text-pink-dark" onClick={() => { logOut() }}>
                                                     Cerrar sesión
                                                 </a>
@@ -124,36 +127,40 @@ export default function Header() {
                         </div>
                         <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-center">
                             <div className="flex-shrink-0 flex items-center">
-                                <Link to="/dashboard">
-                                    <img className="block lg:hidden h-12 w-auto sm:justify-start" src="logospanofondo.png" alt="Workflow" />
-                                    <img className="hidden lg:block h-12 w-auto sm:justify-start" src="logospanofondo.png" alt="Workflow" />
+                                <Link to="/">
+                    
+                                    <img className="hidden lg:block h-12 w-auto sm:justify-start" src="logospanofondo.png" alt="logo Spa" />
                                 </Link>
                             </div>
                             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
 
-                                
-                                            <>
-                                                <Link to="/servicios" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                                                    Servicios
-                                                </Link>
-                                                <Link to="/productos" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                                                    Productos
-                                                </Link>
-                                                <Link to="/reservas" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                                                    Reservas
-                                                </Link>
-                                                <Link to="/nosotros" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                                                    Nosotros
-                                                </Link>
-                                                <Link to="/ayuda" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                                                    Ayuda
-                                                </Link>
-                                                <Link to="/contacto" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                                                    Contacto
-                                                </Link>
-                                                
-                                            </>
+
+                                <>
+                                    <Link to="/servicios" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                        Servicios
+                                    </Link>
+                                    <Link to="/productos" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                        Productos
+                                    </Link>
+                                    <Link to="/reservas" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                        Reservas
+                                    </Link>
+                                    <Link to="/nosotros" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                        Nosotros
+                                    </Link>
+                                    <Link to="/ayuda" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                        Ayuda
+                                    </Link>
+                                    <Link to="/contacto" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                        Contacto
+                                    </Link>
+                                    <Link to="/contacto" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                        Carrito
+                                    </Link>
                                    
+
+                                </>
+
 
 
 
@@ -169,7 +176,7 @@ export default function Header() {
                                         <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 
                                             <div className="ml-3 relative">
-                                               
+
 
 
                                                 {

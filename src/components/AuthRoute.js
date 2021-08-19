@@ -44,7 +44,7 @@ export default function AuthRoute ( { component: Component, ...props} ){
             if(loading) return null
 
             return authStatus ?
-            (<Redirect to="/dashboard" />)
+            (<Redirect to="/" />)
             :
             (<Component {...props} />)
 

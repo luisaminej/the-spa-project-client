@@ -10,7 +10,8 @@ const ProductsState = (props) => {
         products: {
             body:[],
             face:[]
-        }
+        },
+        product: []
     }
 
 
@@ -52,6 +53,26 @@ const ProductsState = (props) => {
         }
     }
 
+    const getProduct = async (singleProduct) => {
+
+        try {
+
+            const respuesta = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/products/${singleProduct}`)
+
+            const getProduct = respuesta.data
+           
+
+
+            dispatch({
+                type: "GET_PRODUCT",
+                payload: getProduct
+            })
+
+        } catch (error) {
+
+        }
+    }
+
     const updateProducts = async (dataForm) => {  
 
         const form = {
@@ -65,6 +86,8 @@ const ProductsState = (props) => {
         
     }
 
+
+    
 
     const deleteProducts = async (dataForm) => {
 
@@ -85,7 +108,9 @@ const ProductsState = (props) => {
         <ProductsContext.Provider
             value={{
                 products: globalState.products,
+                product: globalState.product,
                 
+                getProduct,
                 getProducts,
                 createProducts,
                 updateProducts,

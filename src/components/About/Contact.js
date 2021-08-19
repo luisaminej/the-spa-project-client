@@ -37,14 +37,16 @@ export default function Contact() {
                                 </figure>
                             </div>
                         </div>
+
+
                         <div class="relative bg-white">
                             <div class="absolute inset-0">
                                 <div class="absolute inset-y-0 left-0 w-1/2 bg-gray-50"></div>
                             </div>
 
 
-                            
-                            
+
+
                             <div class="relative max-w-4xl mx-auto lg:grid lg:grid-cols-1">
                                 <div class="bg-gray-50 py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
                                     <div class="max-w-lg mx-auto">
@@ -91,18 +93,18 @@ export default function Contact() {
                                             ¿Buscas trabajo?
                                             <a href="#" class="font-medium text-green-dark underline">Envíanos un correo con tu CV</a>.
                                         </p>
-                                        
-                
-                                        <div class="mt-6">
-                                                <dt class="sr-only">Correo:</dt>
-                                                <dd class="flex">
 
-                                                
-                                                    <span class="ml-3 text-1xl font-extrabold tracking-tight text-green-transparent sm:text-1xl">
+
+                                        <div class="mt-6">
+                                            <dt class="sr-only">Correo:</dt>
+                                            <dd class="flex">
+
+
+                                                <span class="ml-3 text-1xl font-extrabold tracking-tight text-green-transparent sm:text-1xl">
                                                     Síguenos en nuestras redes sociales
-                                                    </span>
-                                                </dd>
-                                            </div>
+                                                </span>
+                                            </dd>
+                                        </div>
 
 
 
@@ -127,11 +129,11 @@ export default function Contact() {
                                             <li>
                                                 <a class="text-indigo-200 hover:text-indigo-100" href="https://www.facebook.com/">
                                                     <span class="sr-only">Twitter</span>
-                                                    <svg fill="#d18181" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px">
-                                                        <path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"/></svg>
-                                                   </a>
+                                                    <svg fill="#d18181" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+                                                        <path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z" /></svg>
+                                                </a>
                                             </li>
-                                            
+
 
 
 
@@ -139,28 +141,94 @@ export default function Contact() {
 
 
                                         <div class="mt-6">
-                                                <dt class="sr-only">Correo:</dt>
-                                                <dd class="flex">
+                                            <dt class="sr-only">Correo:</dt>
+                                            <dd class="flex">
 
-                                                
-                                                    <span class="ml-3 text-1xl font-extrabold tracking-tight text-pink-dark sm:text-1xl">
+
+                                                <span class="ml-3 text-1xl font-extrabold tracking-tight text-pink-dark sm:text-1xl">
                                                     ¡O escríbenos por WhatsApp!
-                                                    </span>
-                                                </dd>
-                                            </div>
+                                                </span>
+                                            </dd>
+                                        </div>
 
 
-                                        
-                                                <a class="ml-4 text-indigo-200 hover:text-indigo-100" href="https://api.whatsapp.com/send?phone=525513192695&text=hola,%20en%20qué%20te%20podemos%20ayudar?">
-                                                    <span class="sr-only">Whatsapp</span>
-                                                    <svg fill="#d18181" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
-                                                        <path d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z" /></svg>
-                                                </a>
-                                            
+
+                                        <a class="ml-4 text-indigo-200 hover:text-indigo-100" href="https://api.whatsapp.com/send?phone=525513192695&text=hola,%20en%20qué%20te%20podemos%20ayudar?">
+                                            <span class="sr-only">Whatsapp</span>
+                                            <svg fill="#d18181" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+                                                <path d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z" /></svg>
+                                        </a>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
+
+
+                        <div class="flex flex-col-2">
+                            <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                                <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                                <h3 class="text-3xl font-extrabold tracking-tight text-green-transparent sm:text-3xl">
+                                            * Horario de servicio:
+                                        </h3>
+                                        <br></br>
+                                    <div class=" overflow-hidden ">
+                                        <table class="min-w-min divide-y divide-gray-200">
+
+                                            <tr>
+                                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-pink-dark uppercase tracking-wider">
+                                                    DÍA
+                                                </th>
+                                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-pink-dark uppercase tracking-wider">
+                                                    Horario
+                                                </th>
+
+                                            </tr>
+
+                                            <tbody>
+
+                                                <tr class="bg-white">
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-600">
+                                                        Lunes - Viernes
+                                                    </td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                        7:00 - 19:00 hrs
+                                                    </td>
+
+                                                </tr>
+
+
+                                                <tr class="bg-gray-50">
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-600">
+                                                        Sábado
+                                                    </td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                        7:00 - 15:00 hrs
+                                                    </td>
+
+                                                </tr>
+
+                                                <tr class="bg-white">
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-600">
+                                                        Domingo
+                                                    </td>
+                                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                        7:00 - 13:00 hrs
+                                                    </td>
+
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>

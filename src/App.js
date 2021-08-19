@@ -107,6 +107,7 @@ function App() {
 
                                   <Route exact path="/productos/cuerpo" component={Body} />
                                   <Route exact path="/productos/rostro" component={Face} />
+                                  
                                   <Route exact path="/productos/:productSlug" component={Product} />
                                   <Route exact path="/servicios/:serviceSlug" component={Service} />
 
