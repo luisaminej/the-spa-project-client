@@ -22,7 +22,7 @@ const FaceState = (props) => {
     const createFace = async (dataForm) => {
         try {
             
-             await axios.post("http://localhost:3001/api/products/face/create", dataForm)
+             await axios.post(`${process.env.REACT_APP_BASE_URL}/api/products/face/create`, dataForm)
 
             getFace()
 
@@ -61,7 +61,7 @@ const FaceState = (props) => {
             name: dataForm.name
         }
 
-         await axios.post("http://localhost:3001/api/products/face/update", form)
+         await axios.post(`${process.env.REACT_APP_BASE_URL}/api/products/face/update`, form)
 
          getFace()
         
@@ -74,7 +74,7 @@ const FaceState = (props) => {
             faceId: dataForm._id
         }
 
-        const res = await axios.post("http://localhost:3001/api/products/face/delete", form)
+        const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/products/face/delete`, form)
 
         console.log(res)
         

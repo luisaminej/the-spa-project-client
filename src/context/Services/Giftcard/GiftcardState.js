@@ -22,7 +22,7 @@ const GiftcardState = (props) => {
     const createGiftcard = async (dataForm) => {
         try {
             
-             await axios.post("http://localhost:3001/api/services/giftcard/create", dataForm)
+             await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/giftcard/create`, dataForm)
 
             getGiftcard()
 
@@ -61,7 +61,7 @@ const GiftcardState = (props) => {
             name: dataForm.name
         }
 
-         await axios.post("http://localhost:3001/api/services/giftcard/update", form)
+         await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/giftcard/update`, form)
 
          getGiftcard()
         
@@ -74,7 +74,7 @@ const GiftcardState = (props) => {
             giftcardId: dataForm._id
         }
 
-        const res = await axios.post("http://localhost:3001/api/services/giftcard/delete", form)
+        const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/giftcard/delete`, form)
 
         console.log(res)
         

@@ -61,7 +61,7 @@ const MassageState = (props) => {
             name: dataForm.name
         }
 
-         await axios.post("http://localhost:3000/api/services/massage/update", form)
+         await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/massage/update`, form)
 
          getMassage()
         
@@ -74,7 +74,7 @@ const MassageState = (props) => {
             massageId: dataForm._id
         }
 
-        const res = await axios.post("http://localhost:3000/api/services/massage/delete", form)
+        const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/massage/delete`, form)
 
         console.log(res)
         

@@ -25,7 +25,7 @@ const ServicesState = (props) => {
     const createServices = async (dataForm) => {
         try {
 
-            await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/services/create`, dataForm)
+            await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/create`, dataForm)
 
             getServices()
 
@@ -41,7 +41,7 @@ const ServicesState = (props) => {
 
         try {
 
-            const respuesta = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/services`)
+            const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/services`)
 
             const getServices = respuesta.data
             console.log(getServices)
@@ -61,7 +61,7 @@ const ServicesState = (props) => {
 
         try {
 
-            const respuesta = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/services/${singleService}`)
+            const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/services/${singleService}`)
 
             const getService = respuesta.data
 
@@ -84,7 +84,7 @@ const ServicesState = (props) => {
             name: dataForm.name
         }
 
-        await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/services/update`, form)
+        await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/update`, form)
 
         getServices()
 
@@ -99,7 +99,7 @@ const ServicesState = (props) => {
             servicesId: dataForm._id
         }
 
-        const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/services/delete`, form)
+        const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/delete`, form)
 
         console.log(res)
 

@@ -22,7 +22,7 @@ const BodilyState = (props) => {
     const createBodily = async (dataForm) => {
         try {
             
-             await axios.post("http://localhost:3001/api/services/bodily/create", dataForm)
+             await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/bodily/create`, dataForm)
 
             getBodily()
 
@@ -61,7 +61,7 @@ const BodilyState = (props) => {
             name: dataForm.name
         }
 
-         await axios.post("http://localhost:3001/api/services/bodily/update", form)
+         await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/bodily/update`, form)
 
          getBodily()
         
@@ -74,7 +74,7 @@ const BodilyState = (props) => {
             bodilyId: dataForm._id
         }
 
-        const res = await axios.post("http://localhost:3001/api/services/bodily/delete", form)
+        const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/bodily/delete`, form)
 
         console.log(res)
         

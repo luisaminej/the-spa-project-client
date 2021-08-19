@@ -22,7 +22,7 @@ const MembershipState = (props) => {
     const createMembership = async (dataForm) => {
         try {
             
-             await axios.post("http://localhost:3001/api/services/membership/create", dataForm)
+             await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/membership/create`, dataForm)
 
             getMembership()
 
@@ -61,7 +61,7 @@ const MembershipState = (props) => {
             name: dataForm.name
         }
 
-         await axios.post("http://localhost:3001/api/services/membership/update", form)
+         await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/membership/update`, form)
 
          getMembership()
         
@@ -74,7 +74,7 @@ const MembershipState = (props) => {
             membershipId: dataForm._id
         }
 
-        const res = await axios.post("http://localhost:3001/api/services/membership/delete", form)
+        const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/membership/delete`, form)
 
         console.log(res)
         

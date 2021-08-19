@@ -22,7 +22,7 @@ const PacksState = (props) => {
     const createPacks = async (dataForm) => {
         try {
             
-             await axios.post("http://localhost:3001/api/services/packs/create", dataForm)
+             await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/packs/create`, dataForm)
 
             getPacks()
 
@@ -61,7 +61,7 @@ const PacksState = (props) => {
             name: dataForm.name
         }
 
-         await axios.post("http://localhost:3001/api/services/packs/update", form)
+         await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/packs/update`, form)
 
          getPacks()
         
@@ -74,7 +74,7 @@ const PacksState = (props) => {
             packsId: dataForm._id
         }
 
-        const res = await axios.post("http://localhost:3001/api/services/packs/delete", form)
+        const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/packs/delete`, form)
 
         console.log(res)
         

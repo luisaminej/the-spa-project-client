@@ -21,7 +21,7 @@ const ProductsState = (props) => {
     const createProducts = async (dataForm) => {
         try {
             
-             await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/products/create`, dataForm)
+             await axios.post(`${process.env.REACT_APP_BASE_URL}/api/products/create`, dataForm)
 
             getProducts()
 
@@ -37,7 +37,7 @@ const ProductsState = (props) => {
 
         try {
 
-            const respuesta = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/products`)
+            const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/products`)
 
             const updatedProducts = respuesta.data
             console.log(updatedProducts)
@@ -57,7 +57,7 @@ const ProductsState = (props) => {
 
         try {
 
-            const respuesta = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/products/${singleProduct}`)
+            const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/products/${singleProduct}`)
 
             const getProduct = respuesta.data
            
@@ -80,7 +80,7 @@ const ProductsState = (props) => {
             name: dataForm.name
         }
 
-         await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/products/update`, form)
+         await axios.post(`${process.env.REACT_APP_BASE_URL}/api/products/update`, form)
 
          getProducts()
         
@@ -95,7 +95,7 @@ const ProductsState = (props) => {
             productsId: dataForm._id
         }
 
-        const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/products/delete`, form)
+        const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/products/delete`, form)
 
         console.log(res)
         
