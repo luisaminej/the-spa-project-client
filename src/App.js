@@ -87,12 +87,12 @@ function App() {
 
                                   {/* RUTAS PRIVADAS */}
                                   <PrivateRoute exact path="/reservas" component={Booking} />
-                                  <PrivateRoute exact path="/dashboard" component={Dashboard} />
+                                  <PrivateRoute exact path="/mi-tablero" component={Dashboard} />
                                   <PrivateRoute exact path="/dashboard/billing" component={Billing} />
 
                                   {/* RUTAS DE AUTENTICACIÓN */}
-                                  <AuthRoute exact path="/login" component={Login} />
-                                  <AuthRoute exact path="/register" component={Register} />
+                                  <AuthRoute exact path="/iniciar-sesion" component={Login} />
+                                  <AuthRoute exact path="/registrarse" component={Register} />
 
                                   {/* RUTAS PÚBLICAS */}
                                   <Route exact path="/" component={Home} />

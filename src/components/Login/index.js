@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react'
 import UserContext from './../../context/UserContext'
+import Logo from './../../assets/logospanofondo.png'
 
 
 export default function Login() {
@@ -39,7 +40,7 @@ export default function Login() {
             <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-md w-full space-y-8">
                     <div>
-                        <img className="mx-auto h-30 w-auto" src="logospanofondo.png" alt="Workflow" />
+                        <img className="mx-auto h-30 w-auto" src={Logo} alt="Workflow" />
                         <h2 className="mt-6 text-center text-3xl font-extrabold text-pink-dark">
                             Iniciar sesión
                         </h2>

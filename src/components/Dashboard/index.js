@@ -1,9 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import Carousel from 'react-elastic-carousel'
+import userContext from './../../context/UserContext'
 
 
 export default function Dashboard() {
-
+        const ctx = useContext(userContext) 
+        const {user} = ctx
+    
     return (
         <>
             <div class="min-h-screen bg-gray-100">
@@ -12,7 +15,7 @@ export default function Dashboard() {
 
                         <div class="hidden lg:block border-t border-white border-opacity-20 py-5">
                             <div class="grid grid-cols-1 gap-8 items-center">
-
+                                    <h1> Hola, {user.username} </h1>
                                 <div>
                                     <div class="max-w-md w-full mx-auto">
                                         <label for="mobile-search" class="sr-only">Search</label>

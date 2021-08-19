@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import UserContext from './../../context/UserContext'
+import Logo from './../../assets/logospanofondo.png'
 
 
 
@@ -63,7 +64,7 @@ export default function Header() {
                                                 <p className=" px-4 py-2 text-sm text-pink-dark">+52 5513192695</p>
                                                 <img className="px-4 py-2" src="flag.png" alt="logo Spa" />
                                                 <p className=" px-4 py-2 text-sm text-pink-dark">México</p>
-                                                <a href="/dashboard" className="block px-4 py-2 text-sm text-pink-dark" role="menuitem" tabindex="-1" id="user-menu-item-0">Mi perfil</a>
+                                                <a href="/mi-tablero" className="block px-4 py-2 text-sm text-pink-dark" role="menuitem" tabindex="-1" id="user-menu-item-0">Mi tablero</a>
                                                 <a className="block px-4 py-2 text-sm text-pink-dark" onClick={() => { logOut() }}>
                                                     Cerrar sesión
                                                 </a>
@@ -71,10 +72,10 @@ export default function Header() {
                                         ) :
                                         (
                                             <>
-                                                <Link to="/register" className="block px-4 py-2 text-sm text-pink-dark">
+                                                <Link to="/registrarse" className="block px-4 py-2 text-sm text-pink-dark">
                                                     Registro
                                                 </Link>
-                                                <Link to="/login" className="block px-4 py-2 text-sm text-pink-dark">
+                                                <Link to="/iniciar-sesion" className="block px-4 py-2 text-sm text-pink-dark">
                                                     Iniciar sesión
                                                 </Link>
                                             </>
@@ -128,8 +129,8 @@ export default function Header() {
                         <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-center">
                             <div className="flex-shrink-0 flex items-center">
                                 <Link to="/">
-                    
-                                    <img className="hidden lg:block h-12 w-auto sm:justify-start" src="logospanofondo.png" alt="logo Spa" />
+
+                                    <img className="hidden lg:block h-12 w-auto sm:justify-start" src={Logo} alt="logo Spa" />
                                 </Link>
                             </div>
                             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
@@ -157,7 +158,7 @@ export default function Header() {
                                     <Link to="/contacto" className="border-transparent text-white hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                                         Carrito
                                     </Link>
-                                   
+
 
                                 </>
 

@@ -3,7 +3,7 @@ import servicesContext from '../../context/Services/Services/ServicesContext'
 import { useParams } from 'react-router-dom'
 
 
-export default function Product() {
+export default function Service() {
     const ctx = useContext(servicesContext)
     const { getService, service } = ctx
 

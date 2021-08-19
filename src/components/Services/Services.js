@@ -69,6 +69,8 @@ export default function Services() {
                                                         <h3 class="mt-4 text-sm font-bold text-pink-dark">
                                                             {service.name}
                                                         </h3>
+                                                        <p class="line-through text-red-900 ">
+                                                            ${service.pricelist}.00 mxn </p>
                                                         <p class="mt-1 text-lg font-medium text-green-transparent">
                                                             ${service.price}
                                                         </p>
@@ -93,6 +95,8 @@ export default function Services() {
                                                         <h3 class="mt-4 text-sm font-bold text-pink-dark">
                                                             {service.name}
                                                         </h3>
+                                                        <p class="line-through text-red-900 ">
+                                                            ${service.pricelist}.00 mxn </p>
                                                         <p class="mt-1 text-lg font-medium text-green-transparent">
                                                             ${service.price}
                                                         </p>
@@ -118,6 +122,8 @@ export default function Services() {
                                                         <h3 class="mt-4 text-sm font-bold text-pink-dark">
                                                             {service.name}
                                                         </h3>
+                                                        <p class="line-through text-red-900 ">
+                                                            ${service.pricelist}.00 mxn </p>
                                                         <p class="mt-1 text-lg font-medium text-green-transparent">
                                                             ${service.price}
                                                         </p>
@@ -142,6 +148,8 @@ export default function Services() {
                                                         <h3 class="mt-4 text-sm font-bold text-pink-dark">
                                                             {service.name}
                                                         </h3>
+                                                        <p class="line-through text-red-900 ">
+                                                            ${service.pricelist}.00 mxn </p>
                                                         <p class="mt-1 text-lg font-medium text-green-transparent">
                                                             ${service.price}
                                                         </p>
@@ -167,6 +175,8 @@ export default function Services() {
                                                         <h3 class="mt-4 text-sm font-bold text-pink-dark">
                                                             {service.name}
                                                         </h3>
+                                                        <p class="line-through text-red-900 ">
+                                                            ${service.pricelist}.00 mxn </p>
                                                         <p class="mt-1 text-lg font-medium text-green-transparent">
                                                             ${service.price}
                                                         </p>
@@ -191,6 +201,8 @@ export default function Services() {
                                                         <h3 class="mt-4 text-sm font-bold text-pink-dark">
                                                             {service.name}
                                                         </h3>
+                                                        <p class="line-through text-red-900 ">
+                                                            ${service.pricelist}.00 mxn </p>
                                                         <p class="mt-1 text-lg font-medium text-green-transparent">
                                                             ${service.price}
                                                         </p>
