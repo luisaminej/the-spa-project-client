@@ -59,8 +59,7 @@ import Services from './components/Services/Services';
 
 import Product from './components/Products/Product';
 import Service from './components/Services/Service'
-import Checkout from './components/checkout';
-import RegisterSuccess from './components/Notifications/RegisterSucess';
+import SuccessPayment from './components/SuccessPayment';
 
 function App() {
   return (
@@ -102,7 +101,8 @@ function App() {
                                   <Route exact path="/ayuda" component={Help} />
                                   <Route exact path="/nosotros" component={Us} />
                   
-                                  <Route exact path="/pago-completado" component={RegisterSuccess} />
+                                  
+                                  <Route exact path="/pago-completado" component={SuccessPayment} />
 
                            
 
