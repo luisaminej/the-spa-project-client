@@ -19,8 +19,8 @@ const reducers = (globalState, action) => {
 
          return {
              ...globalState,
-             token: null,
-             user: null,
+             token: "",
+             user: "",
              authStatus: null
          }
 

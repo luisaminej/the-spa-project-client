@@ -40,7 +40,7 @@ const ProductsState = (props) => {
             const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/products`)
 
             const updatedProducts = respuesta.data
-            console.log(updatedProducts)
+    
 
 
             dispatch({
@@ -97,7 +97,6 @@ const ProductsState = (props) => {
 
         const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/products/delete`, form)
 
-        console.log(res)
         
         getProducts()
 

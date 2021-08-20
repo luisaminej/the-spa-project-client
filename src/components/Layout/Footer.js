@@ -66,7 +66,7 @@ export default function Footer() {
      
     </div>
     <p class="mt-8 text-center text-base text-gray-400">
-      &copy; 2020 TheJungleSpa, Inc. Todos los derechos reservados.
+      &copy; 2021 TheJungleSpaMx, Corp. Todos los derechos reservados.
     </p>
   </div>
 </footer>

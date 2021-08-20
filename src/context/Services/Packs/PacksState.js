@@ -41,7 +41,7 @@ const PacksState = (props) => {
             const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/services/packs`)
 
             const updatedPacks = respuesta.data
-            console.log(updatedPacks)
+    
 
 
             dispatch({
@@ -76,7 +76,6 @@ const PacksState = (props) => {
 
         const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/packs/delete`, form)
 
-        console.log(res)
         
         getPacks()
 

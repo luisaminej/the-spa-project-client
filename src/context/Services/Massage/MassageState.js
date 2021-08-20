@@ -41,7 +41,7 @@ const MassageState = (props) => {
             const respuesta = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/services/massage`)
 
             const updatedMassage = respuesta.data
-            console.log(updatedMassage)
+   
 
 
             dispatch({
@@ -76,7 +76,7 @@ const MassageState = (props) => {
 
         const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/massage/delete`, form)
 
-        console.log(res)
+
         
         getMassage()
 

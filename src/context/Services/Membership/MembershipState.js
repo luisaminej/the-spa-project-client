@@ -41,7 +41,7 @@ const MembershipState = (props) => {
             const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/services/membership`)
 
             const updatedMembership = respuesta.data
-            console.log(updatedMembership)
+
 
 
             dispatch({
@@ -76,7 +76,6 @@ const MembershipState = (props) => {
 
         const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/membership/delete`, form)
 
-        console.log(res)
         
         getMembership()
 

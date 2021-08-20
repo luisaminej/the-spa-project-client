@@ -17,8 +17,7 @@ export default function AuthRoute ( { component: Component, ...props} ){
     const { 
         authStatus,
         verifyingToken } = userCtx
-    
-    console.log("authStatus", authStatus)
+
 
     useEffect( () => {
 

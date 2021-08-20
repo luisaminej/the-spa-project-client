@@ -100,10 +100,11 @@ export default function Product() {
 
 
                                             </div>
-                                            <form>
-
-                                                <button type="submit" class="mt-10 w-full bg-pink-dark border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Agregar a carrito</button>
-                                            </form>
+                                            
+                                                <a href={e.payButton} target="_blank">
+                                                <button class="mt-10 w-full bg-pink-dark border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">Realizar pago</button>
+                                                </a>
+                                            
                                         </div>
 
 

@@ -41,7 +41,7 @@ const BodilyState = (props) => {
             const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/services/bodily`)
 
             const updatedBodily = respuesta.data
-            console.log(updatedBodily)
+    
 
 
             dispatch({
@@ -76,7 +76,6 @@ const BodilyState = (props) => {
 
         const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/bodily/delete`, form)
 
-        console.log(res)
         
         getBodily()
 

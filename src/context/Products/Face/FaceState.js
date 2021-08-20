@@ -41,7 +41,7 @@ const FaceState = (props) => {
             const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/products/face`)
 
             const updatedFace = respuesta.data
-            console.log(updatedFace)
+          
 
 
             dispatch({
@@ -76,7 +76,6 @@ const FaceState = (props) => {
 
         const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/products/face/delete`, form)
 
-        console.log(res)
         
         getFace()
 

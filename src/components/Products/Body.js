@@ -33,7 +33,7 @@ export default function Body() {
                     "No hay productos corporales"
                     :
                     body.map((body, i) => {
-                        console.log(body)
+                     
                         return (
                             <div key={i}>
 

@@ -15,21 +15,9 @@ export default function Dashboard() {
 
                         <div class="hidden lg:block border-t border-white border-opacity-20 py-5">
                             <div class="grid grid-cols-1 gap-8 items-center">
-                                    <h1> Hola, {user.username} </h1>
-                                <div>
-                                    <div class="max-w-md w-full mx-auto">
-                                        <label for="mobile-search" class="sr-only">Search</label>
-                                        <div class="relative text-green-transparent focus-within:text-green-dark">
-                                            <div class="text-green-transparent pointer-events-none absolute inset-y-0 left-0 pl-3 flex items-center">
-
-                                                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="pink-dark" aria-hidden="true">
-                                                    <path fill="pink-logo" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-                                                </svg>
-                                            </div>
-                                            <input id="mobile-search" class="block w-full bg-white bg-opacity-50 py-2 pl-10 pr-3 border border-transparent rounded-md leading-5 text-green-light placeholder-green-transparent focus:outline-none focus:bg-opacity-100 focus:border-transparent focus:placeholder-green-transparent focus:ring-0 sm:text-sm" placeholder="Buscar" type="search" name="search" />
-                                        </div>
-                                    </div>
-                                </div>
+                            <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl"> Hola {user.username}! </h3>
+                            <h5 class="mt-2 text-1xl leading-8  tracking-tight text-gray-200 sm:text-4xl"> Bienvenido al tablero de tus promociones</h5>  
+                             
                             </div>
                         </div>
                     </div>
@@ -72,10 +60,10 @@ export default function Dashboard() {
                                             <div class="text-base font-medium text-gray-800 truncate">Rebecca Nicholas</div>
                                             <div class="text-sm font-medium text-gray-500 truncate">rebecca.nicholas@example.com</div>
                                         </div>
-                                        <button type="button" class="ml-auto flex-shrink-0 bg-white p-1 text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                        <button type="button" class="ml-auto flex-pink-dark bg-white p-1 text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:ring-pink-dark focus:ring-offset-2 focus:ring-pink-dark">
                                             <span class="sr-only">View notifications</span>
 
-                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="pink-dark" viewBox="0 0 24 24" stroke="pink-dark" aria-hidden="true">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                                             </svg>
                                         </button>
@@ -107,7 +95,7 @@ export default function Dashboard() {
                                                 <item><img class="rounded-lg shadow-lg object-cover object-center" src="https://pbs.twimg.com/media/DXo_W4mXUAApwq_.jpg" width="1184" height="1276" /></item>
                                                 <item><img class="rounded-lg shadow-lg object-cover object-center" src="https://i.pinimg.com/originals/b0/59/1c/b0591c5c2bfff9974dd12e1a0727291a.jpg" width="1184" height="1276" /></item>
                                                 <item><img class="rounded-lg shadow-lg object-cover object-center" src="http://www.de-paseo.com/queretaro/wp-content/uploads/2020/05/padme-promocion-masajes-destacada.jpg" width="1184" height="1276" /></item>
-                                                <item><img class="rounded-lg shadow-lg object-cover object-center" src="https://foodandtravel.mx/wp-content/uploads/2021/01/Spas-a-domicilio.jpg" width="1184" height="1276" /></item>
+   
                                                 
                                             </Carousel>
                                             </div>
@@ -119,10 +107,20 @@ export default function Dashboard() {
 
                             <div class="grid grid-cols-1 gap-4">
                                 <section aria-labelledby="section-2-title">
-                                    <h2 class="sr-only" id="section-2-title">Nuestras instalaciones</h2>
-                                    <div class="rounded-lg bg-white overflow-hidden shadow">
+
+                                    <div class="rounded-lg bg-green-l overflow-hidden shadow text-white">
                                         <div class="p-6">
-                                        <img class="rounded-lg shadow-lg object-cover object-center" src="https://i.pinimg.com/originals/03/b8/ba/03b8ba82cd870f350863e243e40862e1.jpg" width="1184" height="1276" />
+                                       Aquí encontrarás las promociones que tenemos disponibles por tu lealtad.
+                                       <br></br>
+                                       Para hacer válidas las promociones, en tu próxima cita el siguiente código:
+                                       <br></br>
+                                       <ul>
+                                           <li>- Limpieza facial profunda: LFMX30</li>
+                                           <li>- Limpieza profunda: LPMX30</li>
+                                           <li>- Día spa infantil: SIMX</li>
+                                           <li>- Tratamiento spa: TSMX20</li>
+                                       </ul>
+                                       
                                         </div>
                                     </div>
                                 </section>

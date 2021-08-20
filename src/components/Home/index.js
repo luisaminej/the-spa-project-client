@@ -24,10 +24,10 @@ export default function Home() {
                                     <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                                         <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
                                             <span class="block text-pink-light">Bienvenido a</span>
-                                            <span class="block text-pink-flamingo">la mejor experiencia spa!</span>
+                                            <span class="block text-pink-flamingo">The Jungle SPA</span>
                                         </h1>
                                         <p class="mt-6 max-w-lg mx-auto text-center text-xl text-pink-light sm:max-w-3xl">
-                                            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+                                            Estás a una experiencia de cambiar tu día.
                                         </p>
                                         <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                                             <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
@@ -87,16 +87,16 @@ export default function Home() {
                                 <div class="mt-12">
                                     <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                                         <div class="pt-6">
-                                            <div class="flow-root bg-green-t rounded-lg px-6 pb-8">
+                                            <div class="flow-root bg-gray-200 rounded-lg px-6 pb-8">
                                                 <div class="-mt-6">
                                                     <div>
-                                                        <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-terra to-green-l rounded-md shadow-lg">
+                                                    <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-pink-logo to-white rounded-md shadow-lg">
 
                                                             <img class="h-12" src="aroma-color.png" alt="Transistor" />
                                                         </span>
                                                     </div>
                                                     <h3 class="mt-8 text-lg font-bold text-pink-dark tracking-tight">Aromaterapia</h3>
-                                                    <p class="mt-5 font-bold text-base text-white">
+                                                    <p class="mt-5 font-bold text-base text-green-l">
                                                         Elige el aroma con aceites esenciales de tu gusto.
                                                     </p>
                                                 </div>
@@ -107,7 +107,7 @@ export default function Home() {
                                             <div class="flow-root bg-gray-100 rounded- px-6 pb-8">
                                                 <div class="-mt-6">
                                                     <div>
-                                                        <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-l to-green-transparent rounded-md shadow-lg">
+                                                        <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-pink-logo to-white rounded-md shadow-lg">
 
                                                             <img class="h-12" src="color-color.png" alt="Transistor" />
                                                         </span>
@@ -120,16 +120,16 @@ export default function Home() {
                                             </div>
                                         </div>
                                         <div class="pt-6">
-                                            <div class="flow-root bg-green-t rounded-lg px-6 pb-8">
+                                        <div class="flow-root bg-gray-200 rounded-lg px-6 pb-8">
                                                 <div class="-mt-6">
                                                     <div>
-                                                        <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-terra to-green-l rounded-md shadow-lg">
+                                                    <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-pink-logo to-white rounded-md shadow-lg">
 
                                                             <img class="h-12" src="te-color.png" alt="Transistor" />
                                                         </span>
                                                     </div>
                                                     <h3 class="mt-8 text-lg font-medium text-pink-dark tracking-tight">Sabor del té</h3>
-                                                    <p class="mt-5 font-bold text-base text-white">
+                                                    <p class="mt-5 font-bold text-base text-green-l">
                                                         Elige entre nuestras variedades de sabor de té con el que te quieres relajar
                                                     </p>
                                                 </div>
@@ -139,7 +139,7 @@ export default function Home() {
                                             <div class="flow-root bg-gray-100 rounded-lg px-6 pb-8">
                                                 <div class="-mt-6">
                                                     <div>
-                                                        <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-l to-green-transparent rounded-md shadow-lg">
+                                                    <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-pink-logo to-white rounded-md shadow-lg">
 
                                                             <img class="h-12" src="musica-color.png" alt="Transistor" />
                                                         </span>
@@ -153,16 +153,16 @@ export default function Home() {
                                         </div>
 
                                         <div class="pt-6">
-                                            <div class="flow-root bg-green-t rounded-lg px-6 pb-8">
+                                        <div class="flow-root bg-gray-200 rounded-lg px-6 pb-8">
                                                 <div class="-mt-6">
                                                     <div>
-                                                        <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-green-terra to-green-l rounded-md shadow-lg">
+                                                    <span class="inline-flex items-center justify-center p-3 bg-gradient-to-r from-pink-logo to-white rounded-md shadow-lg">
 
                                                             <img class="h-12" src="presionmasaje-color.png" alt="Transistor" />
                                                         </span>
                                                     </div>
                                                     <h3 class="mt-8 text-lg font-medium text-pink-dark tracking-tight">Presión del masaje</h3>
-                                                    <p class="mt-5 font-bold text-base text-white">
+                                                    <p class="mt-5 font-bold text-base text-green-l">
                                                         Permite saber al terapeuta la presión que desees sobre el masaje
                                                     </p>
                                                 </div>
@@ -191,7 +191,7 @@ export default function Home() {
                                         Estamos para ayudarte
                                     </p>
                                     <p class="mt-3 text-lg text-gray-300">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt duis.
+                                        Nuestro propósito primordial en la vida es a darte el bienestar que necesitas.
                                     </p>
                                     <div class="mt-8">
                                         <div class="inline-flex rounded-md shadow">

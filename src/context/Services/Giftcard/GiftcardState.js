@@ -41,7 +41,7 @@ const GiftcardState = (props) => {
             const respuesta = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/services/giftcard`)
 
             const updatedGiftcard = respuesta.data
-            console.log(updatedGiftcard)
+    
 
 
             dispatch({
@@ -76,7 +76,7 @@ const GiftcardState = (props) => {
 
         const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/services/giftcard/delete`, form)
 
-        console.log(res)
+
         
         getGiftcard()
 

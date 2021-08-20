@@ -28,12 +28,9 @@ const UserState = (props) => {
             })    
 
         } catch (error) {
-            console.log(error)
 
-                // dispatch({
-                //     type: "REGISTER_ERROR",
-                //     payload: error
-                // })
+
+               
         }
         
     }
@@ -42,21 +39,19 @@ const UserState = (props) => {
 
         const token = localStorage.getItem("token")
 
-        // PREPARAR LA PETICIÓN (REQ), DENTRO DE HEADERS, CON EL TOKEN
+       
         if(token) {
             axiosClient.defaults.headers.common['x-auth-token'] = token
         } else {
             delete axiosClient.defaults.headers.common['x-auth-token']
         }
 
-        console.log("AxiosClient:", axiosClient.defaults.headers.common)
 
-        // ENVIAMOS LA PETICIÓN
+     
         try {
             
             const res = await axiosClient.get('/api/auth')
 
-            console.log(res) // userFound de retorno
 
             dispatch({
                 type: "GET_USER_INFO",
@@ -79,7 +74,6 @@ const UserState = (props) => {
         try {
             const res = await axiosClient.post('/api/auth/login', form)
 
-            console.log(res)
 
             dispatch({
                 type: "LOGIN_SUCCESS",
@@ -99,6 +93,8 @@ const UserState = (props) => {
         })
 
     }
+
+
 
 
 

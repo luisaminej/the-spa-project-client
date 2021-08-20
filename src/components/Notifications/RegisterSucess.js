@@ -15,10 +15,10 @@ export default function RegisterSuccess() {
                                 </div>
                                 <div class="ml-3 w-0 flex-1 pt-0.5">
                                     <p class="text-sm font-medium text-gray-900">
-                                        Successfully saved!
+                                        Pago realizado!
                                     </p>
                                     <p class="mt-1 text-sm text-gray-500">
-                                        Anyone with a link can now view this file.
+                                        Recibirás un correo con tu orden de compra
                                     </p>
                                 </div>
                                 <div class="ml-4 flex-shrink-0 flex">

@@ -41,7 +41,7 @@ const BodyState = (props) => {
             const respuesta = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/products/body`)
 
             const updatedBody = respuesta.data
-            console.log(updatedBody)
+        
 
 
             dispatch({
@@ -76,7 +76,6 @@ const BodyState = (props) => {
 
         const res = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/products/body/delete`, form)
 
-        console.log(res)
         
         getBody()
 

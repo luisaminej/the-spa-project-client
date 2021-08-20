@@ -59,6 +59,8 @@ import Services from './components/Services/Services';
 
 import Product from './components/Products/Product';
 import Service from './components/Services/Service'
+import Checkout from './components/checkout';
+import RegisterSuccess from './components/Notifications/RegisterSucess';
 
 function App() {
   return (
@@ -95,10 +97,12 @@ function App() {
                                   <AuthRoute exact path="/registrarse" component={Register} />
 
                                   {/* RUTAS PÚBLICAS */}
-                                  <Route exact path="/" component={Home} />
+                                 
                                   <Route exact path="/contacto" component={Contact} />
                                   <Route exact path="/ayuda" component={Help} />
                                   <Route exact path="/nosotros" component={Us} />
+                  
+                                  <Route exact path="/pago-completado" component={RegisterSuccess} />
 
                            
 
@@ -118,6 +122,7 @@ function App() {
                                   <Route exact path="/servicios/masajes" component={Massage} />
                                   <Route exact path="/servicios/membresias" component={Membership} />
                                   <Route exact path="/servicios/paquetes" component={Packs} />
+                                  <Route exact path="/" component={Home} />
                                 </Switch>
 
                               </Router>

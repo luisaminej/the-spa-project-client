@@ -39,19 +39,25 @@ export default function Us() {
                         </div>
                         <div class="mt-8 lg:mt-0">
                             <div class="text-base max-w-prose mx-auto lg:max-w-none">
-                                <p class="text-lg text-gray-500">Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.</p>
+                                <p class="text-lg text-gray-500">Una experiencia sin competencia, que le ha posicionado como uno de los mejores experiencias de la ciudad de México.</p>
                             </div>
                             <div class="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-                                <p>Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.</p>
+                                <p>Consciente de la creciente demanda de un cliente cada vez más informado y exigente, que huye de los productos químicos y busca el mejor servicio junto a los mejores resultados, The Jungle Spa persigue la filosofía de ofrecer una experiencia diferente y única basada en el lujo absoluto, consciente con el medio ambiente, y con el sello 100% orgánico certificado.
+
+ 
+
+.</p>
                                 <ul role="list">
-                                    <li>Quis elit egestas venenatis mattis dignissim.</li>
-                                    <li>Cras cras lobortis vitae vivamus ultricies facilisis tempus.</li>
-                                    <li>Orci in sit morbi dignissim metus diam arcu pretium.</li>
+                                    <br></br>
+                                    <li>Experiencia personalizada.</li>
+                                    <li>Todo lo que necesitas para escapar de un día estresante.</li>
+                                    <li>Siéntete envuelto de un ambiente de naturaleza.</li>
                                 </ul>
-                                <p>Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.</p>
+                                
                                 <h5 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-green-transparent sm:text-3xl">Nuestro compromiso</h5>
-                                <p>Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis amet. Laoreet sem est phasellus eu proin massa, lectus. Diam rutrum posuere donec ultricies non morbi. Mi a platea auctor mi.</p>
-                                <p>Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.</p>
+                                <br></br>
+                                <p>Darte el bienestar que necesitas</p>
+                                <p>Hacerte sentir con la mayor seguridad de alcanzar todas tus metas.</p>
                             </div>
                         </div>
                     </div>
@@ -71,7 +77,7 @@ export default function Us() {
                     <div class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
                         <div class="space-y-5 sm:space-y-4">
                             <h2 class="text-3xl font-extrabold text-pink-dark tracking-tight sm:text-4xl">Conoce nuestro equipo</h2>
-                            <p class="text-xl text-gray-500">Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper suspendisse. Vivamus fringilla.</p>
+                            <p class="text-xl text-gray-500">Nuestro team de profesionales que te apoyarán y acompañarán en cada momento para que puedas vivir una experiencia inolvidable.</p>
                         </div>
                         <div class="lg:col-span-2">
                             <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:gap-x-8">
@@ -86,16 +92,16 @@ export default function Us() {
                                 </li>
                                 <li>
                                     <div class="flex items-center space-x-4 lg:space-x-6">
-                                        <img class="w-16 h-16 rounded-full lg:w-20 lg:h-20" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                                        <img class="w-16 h-16 rounded-full lg:w-20 lg:h-20" src="https://p4.wallpaperbetter.com/wallpaper/943/754/483/blondes-women-closeup-blue-eyes-long-hair-yvonne-catterfeld-smiling-faces-white-background-2560x-people-long-hair-hd-art-wallpaper-preview.jpg" alt="" />
                                         <div class="font-medium text-lg leading-6 space-y-1">
-                                            <h3>Leslie Alexander</h3>
+                                            <h3>Noelia Miranda</h3>
                                             <p class="text-pink-dark">Recepción</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="flex items-center space-x-4 lg:space-x-6">
-                                        <img class="w-16 h-16 rounded-full lg:w-20 lg:h-20" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                                        <img class="w-16 h-16 rounded-full lg:w-20 lg:h-20" src="https://www.investigacionyciencia.es/images/30566/articleImage-minimal.jpg" alt="" />
                                         <div class="font-medium text-lg leading-6 space-y-1">
                                             <h3>Leslie Alexander</h3>
                                             <p class="text-pink-dark">Masajista</p>
@@ -104,18 +110,18 @@ export default function Us() {
                                 </li>
                                 <li>
                                     <div class="flex items-center space-x-4 lg:space-x-6">
-                                        <img class="w-16 h-16 rounded-full lg:w-20 lg:h-20" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                                        <img class="w-16 h-16 rounded-full lg:w-20 lg:h-20" src="https://us.123rf.com/450wm/warrengoldswain/warrengoldswain1610/warrengoldswain161000180/65426112-real-hispano-mujer-sonriente-retrato-colecci%C3%B3n-completa-de-diversas-caras.jpg?ver=6" alt="" />
                                         <div class="font-medium text-lg leading-6 space-y-1">
-                                            <h3>Leslie Alexander</h3>
+                                            <h3>Samantha Rodriguez</h3>
                                             <p class="text-pink-dark">Masajista</p>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="flex items-center space-x-4 lg:space-x-6">
-                                        <img class="w-16 h-16 rounded-full lg:w-20 lg:h-20" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                                        <img class="w-16 h-16 rounded-full lg:w-20 lg:h-20" src="https://us.123rf.com/450wm/kurhan/kurhan1412/kurhan141200549/34472225-cara-sonriente-mujer-.jpg?ver=6" alt="" />
                                         <div class="font-medium text-lg leading-6 space-y-1">
-                                            <h3>Leslie Alexander</h3>
+                                            <h3>Frida Monserrat</h3>
                                             <p class="text-pink-dark">Marketing manager</p>
                                         </div>
                                     </div>

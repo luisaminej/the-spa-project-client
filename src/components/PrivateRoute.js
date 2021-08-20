@@ -17,8 +17,7 @@ export default function PrivateRoute ( { component: Component, ...props} ){
     const { 
         authStatus,
         verifyingToken } = userCtx
-    
-    console.log("authStatus", authStatus)
+
 
     useEffect( async () => {
 

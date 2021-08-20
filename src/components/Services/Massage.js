@@ -33,7 +33,7 @@ export default function Massage() {
                     "No hay productos corporales"
                     :
                     massage.map((massage, i) => {
-                        console.log(massage)
+                      
                         return (
                             <div key={i}>
 

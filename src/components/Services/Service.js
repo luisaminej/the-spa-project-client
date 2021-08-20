@@ -38,7 +38,7 @@ export default function Service() {
 
                                         <li class="text-sm">
                                             <a href="#" aria-current="page" class="font-medium text-gray-500 hover:text-gray-600">
-                                                crema-facial-desensibilizante
+                                                {e.slug}
                                             </a>
                                         </li>
                                     </ol>
@@ -85,9 +85,7 @@ export default function Service() {
                                                         <ul role="list" class="pl-4 list-disc text-sm space-y-2">
                                                             <li class="text-green-transparent"><span class="text-green-transparent">{e.details1}</span></li>
 
-                                                            <li class="text-green-transparent"><span class="text-green-transparent">{e.details2}</span></li>
-
-                                                            <li class="text-green-transparent"><span class="text-green-transparent">{e.details3}</span></li>
+                                           
   
                                                         </ul>
                                                     </div>
@@ -97,7 +95,7 @@ export default function Service() {
                                             </div>
                                             <form>
 
-                                                <button type="submit" class="mt-10 w-full bg-pink-dark border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Agregar a carrito</button>
+                                                <button type="submit" class="mt-10 w-full bg-pink-dark border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">Realizar pago</button>
                                             </form>
                                         </div>
 
