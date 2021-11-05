@@ -36,7 +36,7 @@ export default function Header() {
                         <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
 
 
-                            {/* MOBILE */}
+                            {/* MOBILE
                             <button type="button" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
                                 <span className="sr-only">Open main menu</span>
 
@@ -47,7 +47,7 @@ export default function Header() {
                                 <svg className="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
-                            </button>
+                            </button> */}
                         </div>
                         <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-end">
 
@@ -72,10 +72,10 @@ export default function Header() {
                                         ) :
                                         (
                                             <>
-                                                <Link to="/registrarse" className="block px-4 py-2 text-sm text-pink-dark">
+                                                <Link to="/registrarse" className="block px-4 py-2 text-sm text-pink-dark" aria-controls="mobile-menu">
                                                     Registro
                                                 </Link>
-                                                <Link to="/iniciar-sesion" className="block px-4 py-2 text-sm text-pink-dark">
+                                                <Link to="/iniciar-sesion" className="block px-4 py-2 text-sm text-pink-dark" aria-controls="mobile-menu">
                                                     Iniciar sesión
                                                 </Link>
                                             </>
@@ -95,14 +95,6 @@ export default function Header() {
                 </div>
 
 
-                <div className="sm:hidden" id="mobile-menu">
-                    <div className="pt-2 pb-4 space-y-1">
-                        <a href="#" className="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Dashboard</a>
-                        <a href="#" className="border-transparent text-white-100 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Team</a>
-                        <a href="#" className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Projects</a>
-                        <a href="#" className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Calendar</a>
-                    </div>
-                </div>
             </nav>
 
 
@@ -113,7 +105,7 @@ export default function Header() {
                         <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
 
 
-                            {/* MOBILE */}
+                            {/* MOBILE
                             <button type="button" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
                                 <span className="sr-only">Open main menu</span>
 
@@ -124,7 +116,7 @@ export default function Header() {
                                 <svg className="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                                 </svg>
-                            </button>
+                            </button> */}
                         </div>
                         <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-center">
                             <div className="flex-shrink-0 flex items-center">
@@ -209,10 +201,13 @@ export default function Header() {
 
                 <div className="sm:hidden" id="mobile-menu">
                     <div className="pt-2 pb-4 space-y-1">
-                        <a href="#" className="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Dashboard</a>
-                        <a href="#" className="border-transparent text-white-100 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Team</a>
-                        <a href="#" className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Projects</a>
-                        <a href="#" className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Calendar</a>
+                        <a href="/" className="bg-indigo-50 border-black-500 text-pink-dark block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Home</a>
+                        <a href="/servicios" className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Servicios</a>
+                        <a href="/productos" className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Productos</a>
+                        <a href="/reservas" className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Reservas</a>
+                        <a href="/nosotros" className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Nosotros</a>
+                        <a href="/ayuda" className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Ayuda</a>
+                        <a href="/contacto" className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Contacto</a>
                     </div>
                 </div>
             </nav>

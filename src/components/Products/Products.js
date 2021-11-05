@@ -42,7 +42,7 @@ export default function Products() {
                         </div>
                         <div class="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
                             <div>
-                                <h2 class="text-base text-green-dark font-semibold tracking-wide uppercase">Nuestros servicios</h2>
+                                <h2 class="text-base text-green-dark font-semibold tracking-wide uppercase">Nuestros productos</h2>
                                 <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-pink-dark sm:text-4xl">The Jungle Spa</h3>
                             </div>
                         </div>

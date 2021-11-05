@@ -18,10 +18,6 @@ export default function Help() {
                       ¿Cómo puedo agendar?
                     </span>
                     <span class="ml-6 h-7 flex items-center">
-
-                      <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                      </svg>
                     </span>
                   </button>
                 </dt>
@@ -39,10 +35,6 @@ export default function Help() {
                       ¿Cuáles son las formas de pago?
                     </span>
                     <span class="ml-6 h-7 flex items-center">
-
-                      <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                      </svg>
                     </span>
                   </button>
                 </dt>
@@ -60,10 +52,6 @@ export default function Help() {
                       ¿Cómo puedo cambiar de día y horario mi servicio?
                     </span>
                     <span class="ml-6 h-7 flex items-center">
-
-                      <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                      </svg>
                     </span>
                   </button>
                 </dt>
@@ -81,10 +69,6 @@ export default function Help() {
                       ¿Cómo puedo facturar mi servicio?
                     </span>
                     <span class="ml-6 h-7 flex items-center">
-
-                      <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                      </svg>
                     </span>
                   </button>
                 </dt>
@@ -104,10 +88,6 @@ export default function Help() {
                       Si requiero tiempo adicional, ¿Se puede extender mi masaje?
                     </span>
                     <span class="ml-6 h-7 flex items-center">
-
-                      <svg class="rotate-0 h-6 w-6 transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                      </svg>
                     </span>
                   </button>
                 </dt>
